@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infellicon</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <i class="fa-solid fa-bars" style="position: absolute;
+        top: 36px;
+        left: 28px;
+        font-size: 20px;" id="sidebar-close"></i>
+        <a href="#" class="logo"><img src="./img.png" alt="" style="    position: absolute;
+            top: 18px;
+            left: 63px;
+            width: 144px;
+            height: 55px;"></a>
+
+        <div class="menu-content">
+            <div class="menu-title" onclick="toggleMenu(this)">
+                Manage
+                <span class="arrow"><i class="fa-solid fa-caret-right"></i></span>
+            </div>
+
+            <ul class="menu-items">
+                <li class="item">
+                    <a href="#">Moderate</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Tag</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Compliance</a>
+                </li>
+                <li class="item">
+                    <a href="#">Payments</a>
+                </li>
+                <li class="item">
+                    <a href="#">Advance Settings</a>
+                </li>
+            </ul>
+
+            <div class="menu-title" onclick="toggleMenu(this)">
+                Users
+                <span class="arrow"><i class="fa-solid fa-caret-right"></i></span>
+            </div>
+
+            <ul class="menu-items">
+                <li class="item">
+                    <a href="#">Admin</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Client</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="menu-title" onclick="toggleMenu(this)">
+                Engagements
+                <span class="arrow"><i class="fa-solid fa-caret-right"></i></span>
+            </div>
+
+            <ul class="menu-items">
+                <li class="item">
+                    <a href="#">Projects</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Call</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Calendar</a>
+                </li>
+            </ul>
+            <div class="menu-title" onclick="toggleMenu(this)">
+                Experts
+                <span class="arrow"><i class="fa-solid fa-caret-right"></i></span>
+            </div>
+
+            <ul class="menu-items">
+                <li class="item">
+                    <a href="#">Expert Search</a>
+                </li>
+
+                <li class="item">
+                    <a href="#">Value Chain</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav class="navbar" style="display: flex;">
+        <h6 style="text-align: left;
+        font: normal normal 600 25px/33px Montserrat;
+        letter-spacing: 0px;
+        margin-bottom:150px;
+        color: #252B3B;">Calendar</h6>
+        <div class="babu" style="    display: flex;
+        position: relative;
+        color: black;
+        border-radius: 20px;
+        left: 124vh; "><i class="fa-solid fa-user" style="background-color: #F5F4F4;
+        width: 21px;
+        height: 29px;
+        line-height: 2;
+        text-align: center;
+        border-radius: 64px;
+        position: relative;
+        bottom: 7px;
+        
+        "></i>
+            <p style="padding-left:15px;">Vijay Sharma</p><i class="fa-solid fa-caret-down"
+                style="padding-left: 10px; margin-top:2px;"></i>
+        </div>
+
+    </nav>
+
+    <main class="main">
+        <div class="container" style="padding: 20px;">
+            <input type="date" id="dateInput" style="
+            border-radius: 25px;
+            width: 184px;
+            background: #6f69694d;
+            padding:19px;
+            margin-left: 68vh;
+            border: 0px solid #6F6969;
+            margin-bottom: 3vh;
+            height: 44px;
+            ">
+            <table>
+                <thead>
+                    <tr>
+
+                        <th
+                            style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; border-radius: 7px 0px 0px 0px; text-align: center;">
+                            Time</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            05 <br> Healthcare</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            03 <br> Brewbulbs</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            02 <br> Fintech</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            03 <br> Fintech</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            05 <br> Aquaholics</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            00 <br> IT</th>
+                        <th style="color: white; background:  #55C3AA; border: 0px solid #55C3AA; text-align: center;">
+                            00 <br> RIOC</th>
+                        <th
+                            style="color: white; background: #55C3AA; border: 0px solid #55C3AA; border-radius: 0px 7px 0px 0px; padding:12px 0px; text-align: center;">
+                            01 <br> US</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td>09 AM</td>
+                    <td style="background-color: #6e6e6e3d;  line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #b89b71c4;
+                    padding: 7px;
+                    border-radius: 8px; ">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="padding: 0px 58px; "></td>
+                    <td style="background-color: #6e6e6e3d; line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #9F8C8A;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style=" padding: 0px 58px;"></td>
+                    <td style="background-color: #6e6e6e3d; padding: 0px 58px;"></td>
+                    <td style=" padding: 0px 58px;"></td>
+                    <td style=" background-color: #6e6e6e3d;padding: 0px 58px;"></td>
+                    <td style=" padding: 0px 58px;"></td>
+                </tr>
+                <tr>
+                    <td>10 AM</td>
+                    <td style="background-color: #6e6e6e3d; line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #b89b71c4;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d; line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #9F8C8A;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11 AM</td>
+                    <td style="background-color: #6e6e6e3d; line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #b89b71c4;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td style=" line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #5547BF;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>12 AM</td>
+                    <td style="background-color: #6e6e6e3d; line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #b89b71c4;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style=" line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #797B3A;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td style=" line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #5547BF;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>01 PM</td>
+                    <td style="background-color: #6e6e6e3d; line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #b89b71c4;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style=" line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #797B3A;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td style=" line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background: #5547BF;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>02 PM</td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td style=" line-height: 0.7;
+                    font-size: 12px;">
+                        <p style=" color:white;   background:#797B3A;
+                    padding: 7px;
+                    border-radius: 8px;">CALL – Matrix, <br> <br> expert Ravi Gupta</p>
+                    </td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>04 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>05 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>06 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>07 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>08 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09 PM</td>
+                    <td style="background-color: #6e6e6e3d; padding:27px 0px ;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                    <td style="background-color: #6e6e6e3d;"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

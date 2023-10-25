@@ -1,0 +1,232 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f5f4f4 0% 0% no-repeat padding-box;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding: 15px;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-items {
+  list-style: none;
+  display: none;
+  transition: all 0.4s ease;
+}
+
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+
+.menu-title {
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+.item a {
+  color: #252b3b;
+}
+
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  border-radius: 12px;
+  text-align: left;
+  font: normal normal normal 14px/19px;
+  letter-spacing: 0px;
+  color: #252b3b;
+  margin-left: 23px;
+  font-size: 15px;
+}
+
+.item i {
+  font-size: 12px;
+}
+
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #252b3b;
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
+}
+
+.show-submenu~.submenu {
+  display: block;
+}
+
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.sidebar.close~.navbar,
+.sidebar.close~.main {
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  position: relative;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  margin-bottom: 0vh;
+  /* background: #4070f4; */
+  cursor: pointer;
+}
+
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+}
+
+.main h1 {
+  color: #11101d;
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu-content {
+  position: relative;
+}
+
+.menu-title {
+  cursor: pointer;
+}
+
+.menu-items.active {
+  display: block;
+}
+
+.menu-title .arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+  top: 120px;
+  left: 233px;
+  /* width: 8px; */
+  /* height: 5px; */
+  /* transform: matrix(-1, 0, 0, -1, 0, 0); */
+  position: sticky;
+}
+
+.menu-title.active .arrow {
+  transform: rotate(90deg);
+}
+
+.container {
+  background-color: #fff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #707070;
+  border-left: 0px;
+  border-right: 0px;
+  text-align: left;
+  border-top: 0px;
+  padding: 8px;
+}
+
+.babu {
+  background-color: #FFFF;
+  padding: 15px 41px 15px 19px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.menu-content {
+  max-height: 500px;
+  /* Adjust the value as needed */
+  overflow-y: auto;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.item a:hover {
+  background: #252B3B 0% 0% no-repeat padding-box;
+  border-radius: 19px;
+  color: white;
+  width: 150px;
+}
